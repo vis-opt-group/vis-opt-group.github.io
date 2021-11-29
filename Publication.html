@@ -949,8 +949,8 @@ font-size:1.2em;
 <ol id="menu" class="init">
   <li><a href="https://vis-opt-group.github.io/People.html">People</a></li>
     <li><a href="#">Project</a></li>
-    <li><a href="https://vis-opt-group.github.io/Publication.html">Publication</a></li>
-    <li class="cur"><a href="https://vis-opt-group.github.io/">Home</a></li>
+    <li class="cur"><a href="https://vis-opt-group.github.io/Publication.html">Publication</a></li>
+    <li><a href="https://vis-opt-group.github.io/">Home</a></li>
   </ol>
 <div id="container">   <div id="site_title_big"><a href="http://www.vog/" style="text-decoration: none"><img src="./vog_files/2.png" width="500"></a></div>
 <br><br>
@@ -967,49 +967,54 @@ font-size:1.2em;
 </tr>
 <tr valign="top"><!-----------------------------侧边�?---------------------------------------------------->
 <td id="layout-content" width="1000px">
-<h1>Welcome to VOG</h1>
-<table class="imgtable">
-<tbody>
-<tr>
-<td width="200px">
-<div><img src="./vog_files/2.gif"></div>
-</td>
-<td width="800px"><p></p><span style="font-size: large;"><b style="font-size:25px;">Risheng Liu</b></span><p></p>
-<p style="font-size:20px">Tenured Full Professor</p>
-<p style="font-size:20px;"><a href="http://ssdut.dlut.edu.cn/">International School of Information Science &amp; Engineering</a><br>
-<a href="https://www.dlut.edu.cn/">Dalian University of Technology</a><br></p>
-<table class="icon">
-<tr>
-<td width="25px">
-<a href="mailto:rsliu@dlut.edu.cn"><img src="./vog_files/email.ico" width="25px"></a>
-</td>
-<td width="25px">
-<a href="https://scholar.google.com/citations?user=DzuhImQAAAAJ"><img src="./vog_files/google.ico" width="25px"></a>
-</td>
-<td width="25px">
-<a href="https://dblp.uni-trier.de/pers/hd/l/Liu:Risheng"><img src="./vog_files/dblp.ico" width="25px"></a>
-</td>
-<td width="925px">
-</td>
-</tr>
-</table>
-</td>
-</tr>
-<tr>
-<td colspan="2">
-<br>
-<p style="font-size:18px;text-align:justify;line-height:1.5em;">Risheng Liu is currently a full professor with the Digital Media Department at International School of Information Science & Engineering, Dalian University of Technology (DUT). He obtained his B.Sc. (2007) and Ph.D. (2012) from Dalian University of Technology, China. From 2010 to 2012, he was doing research as joint Ph.D. in robotics institute at Carnegie Mellon University. From 2016 to 2018, he was doing research as Hong Kong Scholar at the Hong Kong Polytechnic University. He was supported by the "Outstanding Youth Science Foundation" of NSFC and awarded as the "Top Young Talents" of Liaoning province. He serves as the program committee of top-tier conferences, including <b>Pattern Recognition (Associate Editors), IJCAI (Senior PC), AAAI (Senior PC), NeurIPS, ICML, CVPR, ICCV, ACM MM, ECCV, ICLR, etc.</b> He also serves as editor for the <b>Journal of Electronic Imaging (Senior Editor), The Visual Computer, and IET Image Processing.</b></p>
-</td>
-</tr>
-</tbody>
-</table>
+<h1>2021</h1>
+<div class="publication_container" onclick="toggleDetails(&#39;111ss1&#39;);">
 
-<h2>News</h2>
-<ul>
-<li style="font-size:18px"><b style="font-size:18px">Nov.26, 2021,</b> one paper is accepted by IEEE TPAMI</li>
-</ul>
+    <div class="publication_image"><img src="./vog_files/1.png" width="105" height="105"></div>
 
+    <div class="publication_title"><b style="font-size:14px">Learning Deformable Image Registration from Optimization: Perspective, Modules, Bilevel Training and Beyond.</b><br>
+
+      <p style="line-height:2em"><b>Risheng Liu</b>, Zi Li, Xin Fan, Chenying Zhao, Hao Huang, Zhongxuan Luo.<br><strong><span style="font-size: 12px;"><em><strong>TPAMI (CFF-A)</strong></em></span></strong><b>, [<a href="https://arxiv.org/pdf/2004.14557">Paper</a>|Project page|Code]</b></p></div>
+
+  </div>
+
+  <div class="publication_detail" id="111ss1" name="111ss1" style="display: none;">
+
+    <div class="publication_abstract"><b style="font-size:15px">Abstract:</b><p style="text-align:justify;line-height:1.5em;"><span style="font-size: 15px; background-color: rgb(255, 255, 255);">Conventional deformable registration methods aim at solving an optimization model carefully designed on image pairs and
+their computational costs are exceptionally high. In contrast, recent deep learning-based approaches can provide fast deformation
+estimation. These heuristic network architectures are fully data-driven and thus lack explicit geometric constraints which are
+indispensable to generate plausible deformations, e.g., topology-preserving. Moreover, these learning-based approaches typically pose
+hyper-parameter learning as a black-box problem and require considerable computational and human effort to perform many training runs.
+To tackle the aforementioned problems, we propose a new learning-based framework to optimize a diffeomorphic model via multi-scale
+propagation. Specifically, we introduce a generic optimization model to formulate diffeomorphic registration and develop a series of
+learnable architectures to obtain propagative updating in the coarse-to-fine feature space. Further, we propose a new bilevel self-tuned
+training strategy, allowing efficient search of task-specific hyper-parameters. This training strategy increases the flexibility to various types
+of data while reduces computational and human burdens. We conduct two groups of image registration experiments on 3D volume
+datasets including image-to-atlas registration on brain MRI data and image-to-image registration on liver CT data. Extensive results
+demonstrate the state-of-the-art performance of the proposed method with diffeomorphic guarantee and extreme efficiency. We also
+apply our framework to challenging multi-modal image registration, and investigate how our registration to support the down-streaming
+tasks for medical image analysis including multi-modal fusion and image segmentation.</span></p><br>
+<b style="font-size:15px;">Flow Chart:</b><br><br>
+    <div class="publication_image"><img src="./vog_files/1_1.png" width="600"></div>
+
+
+      <div class="newline_10"></div>
+
+      <b style="font-size:15px;"><br>Latex Bibtex Citation:</b><br>
+
+      <p style="line-height:1.5em">@article{liu2021learning,<br>
+  	title={Learning deformable image registration from optimization: perspective, modules, bilevel training and beyond},<br>
+  	author={Liu, Risheng and Li, Zi and Fan, Xin and Zhao, Chenying and Huang, Hao and Luo, Zhongxuan},<br>
+  	journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},<br>
+  	year={2021},<br>
+  	publisher={IEEE}<br>
+}</p> </div>
+
+    <div class="publication_links">  </div>
+
+  </div>
 </td></tr></tbody></table>
+<p>
   <div class="newline_10"></div>
   
   
@@ -1038,6 +1043,8 @@ function toggleDetails (id) {
 
     <div id="newline_5"></div>
     <div id="footer"> © 2021 |  vog  </div> </div>
+<div id="fancybox-tmp"></div><div id="fancybox-loading"><div></div></div><div id="fancybox-overlay"></div><div id="fancybox-wrap"><div id="fancybox-outer"><div class="fancybox-bg" id="fancybox-bg-n"></div><div class="fancybox-bg" id="fancybox-bg-ne"></div><div class="fancybox-bg" id="fancybox-bg-e"></div><div class="fancybox-bg" id="fancybox-bg-se"></div><div class="fancybox-bg" id="fancybox-bg-s"></div><div class="fancybox-bg" id="fancybox-bg-sw"></div><div class="fancybox-bg" id="fancybox-bg-w"></div><div class="fancybox-bg" id="fancybox-bg-nw"></div><div id="fancybox-content"></div><a id="fancybox-close"></a><div id="fancybox-title"></div><a href="javascript:;" id="fancybox-left"><span class="fancy-ico" id="fancybox-left-ico"></span></a><a href="javascript:;" id="fancybox-right"><span class="fancy-ico" id="fancybox-right-ico"></span></a></div></div></body></html>
+
 <img src="http://www.vog/" alt="" class="bigimg">
 <div class="mask"> <img src="./vog_files/close.png" alt=""> </div>
 
