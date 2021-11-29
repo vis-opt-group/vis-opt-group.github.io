@@ -131,8 +131,8 @@ img {
   float: left;
 }
 .publication_title {
-  margin-left: 15px;
-  width: 1000px;
+  margin-left: 20px;
+  width: 850px;
   float: left;
 }
 .publication_detail {
@@ -161,14 +161,14 @@ img {
 }
 .publication_abstract {
   float: justify;
-  width: 900px;
-  margin-right: 20px;
+  width: 1100px;
+  margin-right: 0px;
   font-size: 0.9em;
   line-height: 1.2em;
 }
 .publication_links {
   float: left;
-  width: 180px;
+  width: 0px;
   margin-top: -3px;
   margin-bottom: 10px;
 }
