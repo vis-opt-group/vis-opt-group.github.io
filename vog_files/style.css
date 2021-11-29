@@ -472,7 +472,7 @@ a:hover {
 }
 /*** Projects ***/
 #projects {
-  width: 960px;
+  width: 500px;
   margin: auto;
 }
 #projects p {
@@ -485,11 +485,11 @@ a:hover {
 .projects_container {
   padding: 0px;
   display: block;
-  width: 990px;
+  width: 900px;
   float: left;
   height: auto;
   margin-top: 0px;
-  margin-left: 0px;
+  margin-left: -20px;
   margin-bottom: 0px;
   margin-right: -30px;
 }
@@ -502,14 +502,14 @@ a:hover {
 .projects_item {
   border-radius: 8px;
   padding: 25px;
-  width: 430px;
+  width: 400px;
   float: left;
   cursor: pointer;
 }
 .projects_item:hover {
   background: #abbbdc;
   background: -webkit-gradient(linear, 0% 0%, 1000% 0%, from(#abbbdc), to(#fff));
-  background: -webkit-linear-gradient(left, #abbbdc, #fff);
+  background: -webkit-linear-gradient(left, #D5C5F1, #fff);
   background: -moz-linear-gradient(top, #abbbdc, #fff);
   background: -ms-linear-gradient(left, #abbbdc, #fff);
   background: -o-linear-gradient(left, #abbbdc, #fff);
