@@ -38,7 +38,7 @@ body {
   font-family: "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
   font-size: .875em;
   line-height: 1.7em;
-  background: #fff;
+  background: #EDE7F9;
   color: #333;
 }
 img {
@@ -110,15 +110,15 @@ img {
 }
 .publication_container {
   float: left;
-  padding: 5px;
-  width: 1015px;
-  border-radius: 8px;
+  padding: 0px;
+  width: 1000px;
+  border-radius: 0px;
   cursor: pointer;
 }
 .publication_container:hover {
   background: #abbbdc;
   background: -webkit-gradient(linear, 0% 0%, 1000% 0%, from(#abbbdc), to(#fff));
-  background: -webkit-linear-gradient(left, #fdf4f2, #fff);
+  background: -webkit-linear-gradient(left, #D5C5F1, #fff);
   background: -moz-linear-gradient(left, #abbbdc, #fff);
   background: -ms-linear-gradient(left, #abbbdc, #fff);
   background: -o-linear-gradient(left, #abbbdc, #fff);
@@ -143,7 +143,7 @@ img {
   */
   border-radius: 2px;
   box-shadow: 0px 0px 2px #444;
-  margin-left: 20px;
+  margin-left: 0px;
   margin-top: 8px;
   margin-bottom: 10px;
   padding: 10px;
@@ -278,7 +278,7 @@ img {
 #container {
   font-size: 1em;
   width: 960px;
-  background: #FFF;
+  background: #EDE7F9;
   border-radius: 8px;
 
    border: 0px solid #cacbcb;
@@ -292,10 +292,10 @@ img {
   font-family: 'Quicksand', sans-serif;
   font-size: 36px;
   width: 327px;
-  height: 75px;
+  height: 100px;
   position: absolute;
-  top: -77px;
-  left: -50px;
+  top: -70px;
+  left: -30px;
 }
 #site_title_big img {
   float: left
@@ -562,7 +562,7 @@ a:hover {
   color: #283444;
 }
 #menu li.cur a {
-  background-color: #fdf4f2;
+  background-color: 	#D5C5F1;
   border-radius: 25px;
 }
 #menu li.cur span {
