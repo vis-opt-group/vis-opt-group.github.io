@@ -1208,6 +1208,168 @@ and illumination are highly correlated to satisfy the well-known Retinex decompo
 }</p> </div>
 </div>
 </td></tr>
+<tr>
+<td id="layout-content" width="1200px">
+<div class="publication_container" onclick="toggleDetails(&#39;111ss6&#39;);">
+
+    <div class="publication_image"><img src="./vog_files/Publication/long_TNNLS.png" width="100" height="100"></div>
+
+    <div class="publication_title"><b style="font-size:14px">Learning Deep Context-Sensitive Decomposition for Low-Light Image Enhancement.</b><br>
+
+      <p style="line-height:2em">Long Ma, <b>Risheng Liu</b>, Jiaao Zhang, Xin Fan, Zhongxuan Luo<br><strong><span style="font-size: 12px;"><em><strong>IEEE TNNLS (CFF-B)</strong></em></span></strong><b>, [<a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9420270">Paper</a>|<a href="https://github.com/KarelZhang/CSDNet-CSDGAN">Code</a>]</b></p></div>
+
+  </div>
+
+  <div class="publication_detail" id="111ss6" name="111ss6" style="display: none;">
+
+    <div class="publication_abstract"><b style="font-size:15px">Abstract:</b><p style="text-align:justify;line-height:1.5em;"><span style="font-size: 15px; background-color: rgb(255, 255, 255);">Enhancing  the  quality  of  low-light  (LOL)  imagesplays  a   very   important  role  in  many   image   processing  andmultimedia applications. In recent years, a variety of deep learn-ing  techniques  have  been  developed  to  address  this  challengingtask.  A  typical  framework  is  tosimultaneously  estimate  theillumination  and  reflectance,  but  they  disregard  the  scene-levelcontextual  information  encapsulated  in  feature  spaces,  causingmany  unfavorable  outcomes,  e.g.,  details  loss,  color  unsatura-tion,  and  artifacts.  To  address  these  issues,  we  develop  a  newcontext-sensitive  decomposition  network  (CSDNet)  architectureto  exploit   the  scene-level   contextual   dependencies  on   spatialscales. More concretely, we build a two-stream estimation mech-anism including reflectance and illumination estimation network.We design a novel context-sensitive decomposition connection tobridge  the  two-stream  mechanism  by  incorporating  the  phys-ical  principle.  The  spatially  varying  illumination  guidance  isfurther  constructed  for  achieving  the  edge-aware  smoothnessproperty  of  the  illumination  component.  According  to  differenttraining patterns, we construct CSDNet (paired supervision) andcontext-sensitive  decomposition  generative  adversarial  network(CSDGAN) (unpaired supervision) to fully evaluate our designedarchitecture.  We  test  our  method  on  seven  testing  benchmarks[including  massachusetts  institute  of  technology  (MIT)-AdobeFiveK,  LOL,  ExDark,  and  naturalness  preserved  enhancement(NPE)] to conduct plenty of analytical and evaluated experiments.Thanks to our designed context-sensitive  decomposition connec-tion,  we  successfully  realized  excellent  enhanced  results  (withsufficient details,  vivid  colors,  and  few  noises),  which  fully indi-cates our superiority against existing state-of-the-art approaches.Finally,   considering   the   practical   needs   for   high   efficiency,we develop a lightweight CSDNet (named LiteCSDNet) by reduc-ing the number of channels. Furthermore, by sharing an encoderfor these two components, we obtain a more lightweight version(SLiteCSDNet  for  short).  SLiteCSDNet  just  contains  0.0301Mparameters  but  achieves  the  almost  same  performance  as  CSD-Net.Code  is  available  at  https://github.com/KarelZhang/CSDNet-CSDGAN.</span></p><br>
+<b style="font-size:15px;">Flow Chart:</b><br><br>
+    <div class="publication_image"><img src="./vog_files/Publication/long_TNNLS_1.png" width="900"></div>
+
+
+      <div class="newline_10"></div>
+
+      <b style="font-size:15px;"><br>Latex Bibtex Citation:</b><br>
+
+      <p style="line-height:1.5em">
+@article{ma2021learning,<br>
+  title={Learning deep context-sensitive decomposition for low-light image enhancement},<br>
+  author={Ma, Long and Liu, Risheng and Zhang, Jiaao and Fan, Xin and Luo, Zhongxuan},<br>
+  journal={IEEE Transactions on Neural Networks and Learning Systems},
+  year={2021},<br>
+  publisher={IEEE}<br>
+}</p> </div>
+
+    <div class="publication_links">  </div>
+
+  </div>
+
+</td>
+</tr>
+<tr>
+<td id="layout-content" width="1200px">
+<div class="publication_container" onclick="toggleDetails(&#39;111ss7&#39;);">
+
+    <div class="publication_image"><img src="./vog_files/Publication/long_SPL.png" width="100" height="100"></div>
+
+    <div class="publication_title"><b style="font-size:14px">Joint Over and Under Exposures Correction by Aggregated Retinex Propagation for Image Enhancement.</b><br>
+
+      <p style="line-height:2em">Long Ma, Dian Jin, <b>Risheng Liu</b>, Xin Fan, Zhongxuan Luo<br><strong><span style="font-size: 12px;"><em><strong>IEEE SPL (CFF-C)</strong></em></span></strong><b>, [<a href="https://ieeexplore.ieee.org/abstract/document/9137640">Paper</a>]</b></p></div>
+
+  </div>
+
+  <div class="publication_detail" id="111ss7" name="111ss7" style="display: none;">
+
+    <div class="publication_abstract"><b style="font-size:15px">Abstract:</b><p style="text-align:justify;line-height:1.5em;"><span style="font-size: 15px; background-color: rgb(255, 255, 255);">Since the interference of ambient light and the limi-tation of physical devices, it is quite a common phenomenon thatimages taken in real-world scenarios turn out to be incorrectlyexposed. Most existing techniques emphasize underexposed imagecorrection.  On  one  hand,  these  works  ignore  the  correction  ofover-exposure regions in the original input. On the other hand, itis likely to generate over-exposure images. To mitigate these issues,we  have  developed  a  novel  aggregated  Retinex  propagations  tosimultaneously correct over and under-exposure correction of asingle image. Concretely, we first manifest the necessity of con-currently  correcting  under  and  over-exposure  appearances. Weestablish  a  Retinex  image  propagation  framework  with  sharedweights to correct different levels of exposure. Then by introducingthe fusion computational module, we achieve the accurate exposurecorrection for a single image. Plenty of quantitative and qualitativecomparisons are conducted to fully indicate our superiority againstother state-of-the-art algorithms. The elaborated algorithmic anal-yses show our effectiveness. Experiments on face detection furtherverify our practicability.</span></p><br>
+<b style="font-size:15px;">Flow Chart:</b><br><br>
+    <div class="publication_image"><img src="./vog_files/Publication/long_SPL_1.png" width="900"></div>
+
+
+      <div class="newline_10"></div>
+
+      <b style="font-size:15px;"><br>Latex Bibtex Citation:</b><br>
+
+      <p style="line-height:1.5em">
+@article{ma2020joint,<br>
+  title={Joint Over and Under Exposures Correction by Aggregated Retinex Propagation for Image Enhancement},<br>
+  author={Ma, Long and Jin, Dian and Liu, Risheng and Fan, Xin and Luo, Zhongxuan},<br>
+  journal={IEEE Signal Processing Letters},<br>
+  volume={27},<br>
+  pages={1210--1214},<br>
+  year={2020},<br>
+  publisher={IEEE}<br>
+}</p> </div>
+
+    <div class="publication_links">  </div>
+
+  </div>
+
+</td>
+</tr>
+
+<tr>
+<td id="layout-content" width="1200px">
+<div class="publication_container" onclick="toggleDetails(&#39;111ss8&#39;);">
+
+    <div class="publication_image"><img src="./vog_files/Publication/long_PRCV.png" width="100" height="100"></div>
+
+    <div class="publication_title"><b style="font-size:14px">Learning Multi-scale Retinex with Residual Network for Low-Light Image Enhancement.</b><br>
+
+      <p style="line-height:2em">Long Ma,  Jie Lin, Jingjie Shang, Wei Zhong, Xin Fan, Zhongxuan Luo, <b>Risheng Liu</b><br><strong><span style="font-size: 12px;"><em><strong>IEEE SPL (CFF-C)</strong></em></span></strong><b>, [<a href="https://link.springer.com/chapter/10.1007/978-3-030-60633-6_24">Paper</a>]</b></p></div>
+
+  </div>
+
+  <div class="publication_detail" id="111ss8" name="111ss8" style="display: none;">
+
+    <div class="publication_abstract"><b style="font-size:15px">Abstract:</b><p style="text-align:justify;line-height:1.5em;"><span style="font-size: 15px; background-color: rgb(255, 255, 255);">Existing network-based techniques addressing low-light image enhancement are developed by using the complex network architectures. However, the performance is not ideal, and they cannot give a rea-
+sonable interpretation of the effects of each layer in the network. To settle these issues, we design a residual network to learn multi-scale Retinex for handling low-light image enhancement. To be concrete, inspired by multi-scale Retinex, we define a new residual-type multi-scale Retinex model to gradually remove the illumination generated by the convolutional procedure. Thanks to the progressive mechanism, we can build an intuitive and explicit relationship between our residual-type multi-scale Retinex model and residual network. This enables us can directly utilize the residual network to learn a residual-type multi-scale Retinex
+by integrating the data distribution. Precisely because of our transparent modeling procedure, we can recognize the effects of each layer inour learnable architecture. It is valuable for more e
+ectively exploit the network layers to handle this task. Extensive analytical experiments are
+performed to verify the effectiveness of our proposed method. A series of evaluative experiments are conducted to illustrate our superiority against other state-of-the-art methods.</span></p><br>
+<b style="font-size:15px;">Flow Chart:</b><br><br>
+    <div class="publication_image"><img src="./vog_files/Publication/long_PRCV_1.png" width="900"></div>
+
+
+      <div class="newline_10"></div>
+
+      <b style="font-size:15px;"><br>Latex Bibtex Citation:</b><br>
+
+      <p style="line-height:1.5em">
+@inproceedings{ma2020learning,<br>
+  title={Learning Multi-scale Retinex with Residual Network for Low-Light Image Enhancement},<br>
+  author={Ma, Long and Lin, Jie and Shang, Jingjie and Zhong, Wei and Fan, Xin and Luo, Zhongxuan and Liu, Risheng},<br>
+  booktitle={Chinese Conference on Pattern Recognition and Computer Vision (PRCV)},<br>
+  pages={291--302},<br>
+  year={2020},<br>
+  organization={Springer}<br>
+}</p> </div>
+
+    <div class="publication_links">  </div>
+
+  </div>
+
+</td>
+</tr>
+<tr>
+<td id="layout-content" width="1200px">
+<h2>2020</h2>
+<div class="publication_container" onclick="toggleDetails(&#39;111ss9&#39;);">
+
+    <div class="publication_image"><img src="./vog_files/Publication/xuan_BVFIM.png" width="105" height="105"></div>
+
+    <div class="publication_title"><b style="font-size:14px">A Value-Function-based Interior-point Method for Non-convex Bi-level Optimization
+</b><br>
+
+      <p style="line-height:2em">Risheng Liu, Xuan Liu, Xiaoming Yuan, Shangzhi Zeng, Jin Zhang<br><strong><span style="font-size: 12px;"><em><strong>ICML 2020 (CCF-A)</strong></em></span></strong><b>, [<a href="https://proceedings.mlr.press/v139/liu21o.html">Paper</a>|<a href="https://github.com/vis-opt-group/BVFSM">Code</a>]</b></p></div>
+
+  </div>
+
+<div class="publication_detail" id="111ss9" name="111ss9" style="display: none;">
+
+    <div class="publication_abstract"><b style="font-size:15px">Abstract:</b><p style="text-align:justify;line-height:1.5em;"><span style="font-size: 15px; background-color: rgb(255, 255, 255);">Bi-level optimization model is able to capture a wide range of complex learning tasks with practical interest. Due to the witnessed efficiency in solving bi-level programs, gradient-based methods have gained popularity in the machine learning community. In this work, we propose a new gradient-based solution scheme, namely, the Bi-level Value-Function-based Interior-point Method (BVFIM). Following the main idea of the log-barrier interior-point scheme, we penalize the regularized value function of the lower level problem into the upper level objective. By further solving a sequence of differentiable unconstrained approximation problems, we consequently derive a sequential programming scheme. The numerical advantage of our scheme relies on the fact that, when gradient methods are applied to solve the approximation problem, we successfully avoid computing any expensive Hessian-vector or Jacobian-vector product. We prove the convergence without requiring any convexity assumption on either the upper level or the lower level objective. Experiments demonstrate the efficiency of the proposed BVFIM on non-convex bi-level problems.</span></p><br>
+
+      <div class="newline_10"></div>
+
+      <b style="font-size:15px;"><br>Latex Bibtex Citation:</b><br>
+
+      <p style="line-height:1.5em">
+@InProceedings{pmlr-v139-liu21o,<br>
+title = {A Value-Function-based Interior-point Method for Non-convex Bi-level Optimization},<br>
+author = {Liu, Risheng and Liu, Xuan and Yuan, Xiaoming and Zeng, Shangzhi and Zhang, Jin},<br>
+booktitle = {Proceedings of the 38th International Conference on Machine Learning},<br>
+pages = {6882--6892},<br>
+year = {2021},<br>
+editor = {Meila, Marina and Zhang, Tong},<br>
+volume = {139},<br>
+series = {Proceedings of Machine Learning Research},<br>
+month = {18--24 Jul},<br>
+publisher = {PMLR},<br>
+pdf = {http://proceedings.mlr.press/v139/liu21o/liu21o.pdf},<br>
+url = {https://proceedings.mlr.press/v139/liu21o.html},<br>
+}</p> </div>
+</div>
+</td></tr>
+
 
 </tbody></table>
 <p>
