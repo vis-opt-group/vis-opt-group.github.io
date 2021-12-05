@@ -1192,7 +1192,7 @@ and versatility of our method against state-of-the-art methods.</span></p><br>
     <div class="publication_title"><b style="font-size:14px">Triple-level Model Inferred Collaborative Network Architecture for Video Deraining
 </b><br>
 
-      <p style="line-height:2em">Pan Mu, Zhu Liu, Yaohua Liu, <b>Risheng Liu</b>, Xin Fan<br>
+      <p style="line-height:2em">Pan Mu, Zhu Liu, Yaohua Liu, <b>Risheng Liu*</b>, Xin Fan<br>
 	  <strong><span style="font-size: 12px;"><em>
 	  <strong>IEEE TIP</strong></em></span></strong><b>, 
 	   [<a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9628137">Paper</a>|<a href="https://github.com/vis-opt-group/TMICS">Code</a>]</b></p></div>
@@ -1473,6 +1473,113 @@ url = {https://proceedings.mlr.press/v139/liu21o.html},<br>
   	year={2020},<br>
   	pages={723--730},<br>
 }</p> </div>
+</div>
+</td></tr>
+
+<tr>
+<td id="layout-content" width="1200px">
+<div class="publication_container" onclick="toggleDetails(&#39;111ss21&#39;);">
+
+    <div class="publication_image"><img src="./vog_files/Publication/jinyuan_TIP.png" width="100" height="100"></div>
+
+    <div class="publication_title"><b style="font-size:14px">A Bilevel Integrated Model with Data-driven Layer Ensemble for Multi-modality Image Fusion.</b><br>
+
+      <p style="line-height:2em"><b>Risheng Liu</b>, Jinyuan Liu, Zhiying Jiang, Xin Fan, Zhongxuan Luo<br><strong><span style="font-size: 12px;"><em><strong>IEEE TIP</strong></em></span></strong><b> [<a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9293146">Paper</a>]</b></p></div>
+
+  </div>
+
+  <div class="publication_detail" id="111ss21" name="111ss21" style="display: none;">
+
+    <div class="publication_abstract"><b style="font-size:15px">Abstract:</b><p style="text-align:justify;line-height:1.5em;"><span style="font-size: 15px; background-color: rgb(255, 255, 255);">Image  fusion  plays  a  critical  role  in  a  variety  ofvision  and learning applications. Current fusion approaches  aredesigned  to  characterize  source  images,  focusing  on  a  certaintype  of  fusion  task  while  limited  in  a  wide  scenario.  More-over,  other  fusion  strategies  (i.e.,  weighted  averaging,  choose-max)   cannot   undertake   the   challenging   fusion   tasks,   whichfurthermore  leads  to  undesirable  artifacts  facilely  emerged  intheir  fused  results.  In  this  paper,  we  propose  a  generic  imagefusion  method  with  a  bilevel  optimization  paradigm,  targetingon multi-modality image fusion tasks. Corresponding alternationoptimization is conducted on certain components decoupled fromsource  images.  Via  adaptive  integration  weight  maps,  we  areable  to  get  the  flexible  fusion  strategy  across  multi-modalityimages. We successfully applied it to three types of image fusiontasks, including infrared and visible, computed tomography andmagnetic  resonance  imaging,  and  magnetic  resonance  imagingand single-photon emission computed tomography image fusion.Results highlight the performance and versatility of our approachfrom both  quantitative and  qualitative aspects.</span></p><br>
+
+
+      <div class="newline_10"></div>
+
+      <b style="font-size:15px;"><br>Latex Bibtex Citation:</b><br>
+
+      <p style="line-height:1.5em">
+@article{liu2020bilevel,<br>
+  title={A bilevel integrated model with data-driven layer ensemble for multi-modality image fusion},<br>
+  author={Liu, Risheng and Liu, Jinyuan and Jiang, Zhiying and Fan, Xin and Luo, Zhongxuan},<br>
+  journal={IEEE Transactions on Image Processing},<br>
+  volume={30},<br>
+  pages={1261--1274},<br>
+  year={2020},<br>
+  publisher={IEEE}<br>
+}
+</p> </div>
+</div>
+</td></tr>
+
+<tr>
+<td id="layout-content" width="1200px">
+<div class="publication_container" onclick="toggleDetails(&#39;111ss22&#39;);">
+
+    <div class="publication_image"><img src="./vog_files/Publication/rs_TMI.png" width="100" height="100"></div>
+
+    <div class="publication_title"><b style="font-size:14px">A Deep Framework Assembling Principled Modules for CS-MRI: Unrolling Perspective, Convergence Behaviors, and Practical Modeling.</b><br>
+
+      <p style="line-height:2em"><b>Risheng Liu</b>, Yuxi Zhang, Shichao Cheng, Zhongxuan Luo, Xin Fan<br><strong><span style="font-size: 12px;"><em><strong>IEEE TMI</strong></em></span></strong><b> [<a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9157934">Paper</a>]</b></p></div>
+
+  </div>
+
+  <div class="publication_detail" id="111ss22" name="111ss22" style="display: none;">
+
+    <div class="publication_abstract"><b style="font-size:15px">Abstract:</b><p style="text-align:justify;line-height:1.5em;"><span style="font-size: 15px; background-color: rgb(255, 255, 255);">Compressed  Sensing  Magnetic  ResonanceImaging (CS-MRI) significantly accelerates MR acquisitionat  a  sampling  rate  much  lower  than  the  Nyquist  crite-rion.  A  major  challenge  for  CS-MRI  lies  in  solving  theseverely ill-posed inverse problem to reconstruct aliasing-free MR images from the sparsek-space data. Conventionalmethods typically optimize an energy function, producingrestoration  of  high  quality,  but  their  iterative  numericalsolvers unavoidably bring extremely large time consump-tion.   Recent   deep   techniques  provide   fast   restorationby  either  learning  direct  prediction  to  final  reconstruc-tion or plugging learned modules into the energy optimizer.Nevertheless,  these  data-driven  predictors  cannot  guar-antee  the  reconstruction following  principled  constraintsunderlying  the  domain  knowledge  so  that  the  reliabilityof  their  reconstruction  process  is  questionable.  In  thispaper, we propose a deep framework assembling principledmodules for CS-MRI that fuses learning strategy with theiterative  solver  of  a  conventional  reconstruction  energy.This  framework  embeds  an  optimal  condition  checkingmechanism, fosteringefficientandreliablereconstruction.We also apply the framework to three practical tasks,i.e., complex-valued data reconstruction, parallel imaging andreconstruction with Rician noise. Extensive experiments onboth benchmark and manufacturer-testing images demon-strate that the proposed method reliably converges to theoptimal  solution more  efficiently and  accurately than  thestate-of-the-art in various scenarios.</span></p><br>
+
+
+      <div class="newline_10"></div>
+
+      <b style="font-size:15px;"><br>Latex Bibtex Citation:</b><br>
+
+      <p style="line-height:1.5em">
+@article{liu2020deep,<br>
+  title={A Deep Framework Assembling Principled Modules for CS-MRI: Unrolling Perspective, Convergence Behaviors, and Practical Modeling},<br>
+  author={Liu, Risheng and Zhang, Yuxi and Cheng, Shichao and Luo, Zhongxuan and Fan, Xin},<br>
+  journal={IEEE Transactions on Medical Imaging},<br>
+  volume={39},<br>
+  number={12},<br>
+  pages={4150--4163},<br>
+  year={2020},<br>
+  publisher={IEEE}<br>
+}
+</p> </div>
+</div>
+</td></tr>
+
+<tr>
+<td id="layout-content" width="1200px">
+<div class="publication_container" onclick="toggleDetails(&#39;111ss23&#39;);">
+
+    <div class="publication_image"><img src="./vog_files/Publication/rs_TNNLS.png" width="100" height="100"></div>
+
+    <div class="publication_title"><b style="font-size:14px">Location-aware and Regularization-adaptive Correlation Filters for Robust Visual Tracking.</b><br>
+
+      <p style="line-height:2em"><b>Risheng Liu</b>, Qianru Chen, Yuansheng Yao, Xin Fan, Zhongxuan Luo<br><strong><span style="font-size: 12px;"><em><strong>IEEE TNNLS</strong></em></span></strong><b> [<a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9158561">Paper</a>]</b></p></div>
+
+  </div>
+
+  <div class="publication_detail" id="111ss23" name="111ss23" style="display: none;">
+
+    <div class="publication_abstract"><b style="font-size:15px">Abstract:</b><p style="text-align:justify;line-height:1.5em;"><span style="font-size: 15px; background-color: rgb(255, 255, 255);">Correlation filter (CF) has recently been widely usedfor visual tracking. The estimation of the search window and thefilter-learning strategies is the key component of the CF trackers.Nevertheless, prevalent CF models separately address these issuesin  heuristic  manners.  The  commonly  used  CF  models  directlyset  the  estimated  location  in  the  previous  frame  as  the  searchcenter  for  the  current  one.  Moreover,  these  models  usually  relyon  simple  and  fixed  regularization  for  filter  learning,  and  thus,their performance is compromised by the search window size andoptimization heuristics. To break these limits, this article proposesa  location-aware  and  regularization-adaptive  CF  (LRCF)  forrobust  visual  tracking.  LRCF  establishes  a  novel  bilevel  opti-mization model to address simultaneously the location-estimationand   filter-training  problems.  We   prove   that   our   bilevel  for-mulation  can  successfully  obtain  a  globally  converged  CF  andthe  corresponding  object  location  in  a  collaborative  manner.Moreover, based on the LRCF framework, we design two trackersnamed  LRCF-S  and  LRCF-SA  and  a  series  of  comparisons  toprove  the  flexibility  and  effectiveness  of  the  LRCF  framework.Extensive  experiments  on  different challenging benchmark datasets  demonstrate  that  our  LRCF  trackers  perform  favorablyagainst  the state-of-the-art  methods in practice.</span></p><br>
+
+
+      <div class="newline_10"></div>
+
+      <b style="font-size:15px;"><br>Latex Bibtex Citation:</b><br>
+
+      <p style="line-height:1.5em">
+@article{liu2020location,<br>
+  title={Location-aware and regularization-adaptive correlation filters for robust visual tracking},<br>
+  author={Liu, Risheng and Chen, Qianru and Yao, Yuansheng and Fan, Xin and Luo, Zhongxuan},<br>
+  journal={IEEE Transactions on Neural Networks and Learning Systems},
+  volume={32},<br>
+  number={6},<br>
+  pages={2430--2442},<br>
+  year={2020},<br>
+  publisher={IEEE}<br>
+}
+</p> </div>
 </div>
 </td></tr>
 
