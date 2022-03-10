@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<!-- saved from url=(0024)http://www.vog/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="initial-scale=2.0,width=device-width,user-scalable=yes" />
+<link rel="shortcut icon" href="./vog_files/vog.ico" type="image/x-icon">
+<title>VOG</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<link type="image/x-icon" rel="shortcut icon" href="http://www.vog/logo.ico">
+
+<link rel="stylesheet" type="text/css" media="all" href="./vog_files/style.css">
+<script src="./vog_files/jquery.js.下载"></script> 
+<script src="./vog_files/zoom.js.下载"></script>
+<style>
+body{font-family:"Georgia"}
+init {list-style-type:none}
+.bigimg {
+	width: 1000px!important;
+	height: 563px!important ;
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	display: none;
+	z-index: 9999;
+	border: 10px solid #fff;
+}
+.mask {
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #fff;
+	opacity: 0.5;
+	filter: Alpha(opacity=50);
+	z-index: 98;
+	transition: all 1s;
+	display: none
+}
+.bigbox {
+	width: 840px;
+	background: #fff;
+	border: 1px solid #ededed;
+	margin: 0 auto;
+	border-radius: 10px;
+	overflow: hidden;
+	padding: 10px;
+}
+.bigbox>.imgbox {
+	width: 400px;
+	height: 250px;
+	float: left;
+	border-radius: 5px;
+	overflow: hidden;
+	margin: 0 10px 10px 10px;
+}
+.bigbox>.imgbox>img {
+	width: 100%;
+}
+.imgbox:hover {
+	cursor: zoom-in
+}
+.mask:hover {
+	cursor: zoom-out
+}
+.mask>img {
+	position: fixed;
+	right: 10px;
+	top: 10px;
+	width: 60px;
+}
+.mask>img:hover {
+	cursor: pointer
+}
+/*Exhibition Research field*/
+.init {list-style-type: none}
+.divcss{
+width:110%;
+//border:1px solid;
+}
+
+.divcss_left{
+padding-top:10px;
+float:left;
+width:20%;
+//border:1px solid;
+}
+.divcss_left img{
+box-shadow:5px 2px 15px #000
+}
+ 
+.divcss_right{
+float:right;
+width:75%;
+border-top:5px solid #DDD;
+padding-top:15px;
+font-family:Constantia;
+font-size:1.05em;
+color:#000;
+//border:1px solid;
+} 
+
+.divcss_right a{
+color:#55D;
+text-decoration:none;
+font-style:italic;
+}
+
+.divcss_right a:hover{
+color:#55D;
+}
+
+.clear{ clear:both}
+
+/****************News******************/
+.divnewscss{
+width:90%;
+box-shadow:2px 2px 18px #222;
+}
+
+.divnewslicss{
+border-bottom:1px solid #DDD;
+padding-top:0.5em;
+padding-bottom:0.5em;
+padding-left:0.5em;
+//margin-top:-1.3em;
+//margin-bottom:-1.3em;
+font-family:Georgia;
+font-size:1.2em;
+color:#444;
+transition:background-color 0.5s;
+-ms-transition:background-color 0.5s; 
+-moz-transition:background-color 0.5s; /* Firefox 4 */
+-webkit-transition:background-color 0.5s; /* Safari and Chrome */
+-o-transition:background-color 0.5s; /* Opera */
+//border:1px solid #F00;
+}
+
+
+.divnewslicss:hover{
+background-color:#DDD;
+}
+
+.newsli_left{
+width:80%;
+float:left;
+padding-right:3em;
+border-right:1px solid #AAA;
+
+}
+
+.newsli_right{
+width:20%;
+text-align:center;
+float:right;
+}
+
+
+/**********People*****************/
+.divpeople-facultycontainer{
+width:100%;
+margin-top:-5%;
+}
+
+.divpeople-mctitle{
+text-align:center;
+font-family:Georgia;
+font-size:2.6em;
+margin-bottom:60px;
+background:#E8E8E8;
+}
+
+.divpeople-mcsubtitle{
+font-family:Comic Sans MS;
+font-size:1.7em;
+margin-top:40px;
+margin-bottom:40px;
+color:#222;
+text-align:center;
+}
+
+.divpeople-container{
+padding-top:10px;
+}
+
+a .divpeople-protrait img{
+width:100%;
+border-radius:110px;
+box-shadow:0 5px 13px #666;
+transition:all 0.5s;
+-ms-transition:all 0.5s; 
+-moz-transition:all 0.5s; /* Firefox 4 */
+-webkit-transition:all 0.5s; /* Safari and Chrome */
+-o-transition:all 0.5s; /* Opera */
+transition:all 0.5s;
+}
+
+a .divpeople-protrait:hover img{ 
+border-radius:20px; 
+}
+
+.divpeople-spinfo{
+text-align:center;
+//margin-top:-1em;
+}
+
+.divpeople-name{
+width:100%;
+font-family:Georgia;
+font-weight:bold;
+font-size:1.2em;
+}
+
+.divpeople-sname{
+width:120%;
+margin-left:-10%;
+font-family:Georgia;
+font-weight:bold;
+font-size:1.2em;
+}
+
+
+.divpeople-grade{
+width:100%;
+font-family:Georgia;
+font-size:1em;
+}
+
+.divpeople-appendinfo{
+width:100%;
+font-family:Georgia;
+font-size:1em;
+color:#3AF;
+font-style:italic;
+}
+
+.divpeople-1people{
+margin:0 auto;
+width:20%;
+text-align:center;
+}
+
+.divpeople-2people1{
+width:20%;
+text-align:center;
+float:left;
+margin-left:25%;
+margin-right:5%;
+}
+
+.divpeople-2people2{
+width:20%;
+text-align:center;
+float:left;
+margin-left:5%;
+margin-right:25%;
+}
+
+.divpeople-3people1{
+width:20%;
+text-align:center;
+float:left;
+margin-left:12%;
+margin-right:4%;}
+
+.divpeople-3people2{
+width:20%;
+text-align:center;
+float:left;
+margin-left:4%;
+margin-right:4%;}
+
+.divpeople-3people3{
+width:20%;
+text-align:center;
+float:left;
+margin-left:4%;
+margin-right:12%;}
+
+
+.divpeople-4people1{
+width:20%;
+text-align:center;
+float:left;
+margin-left:4%;
+margin-right:2%;}
+
+
+.divpeople-4people2{
+width:20%;
+text-align:center;
+float:left;
+margin-left:2%;
+margin-right:2%;}
+
+.divpeople-4people3{
+width:20%;
+text-align:center;
+float:left;
+margin-left:2%;
+margin-right:2%;}
+
+.divpeople-4people4{
+width:20%;
+text-align:center;
+float:left;
+margin-left:2%;
+margin-right:4%;
+}
+
+
+/**************Publication************/
+.divcssp{
+width:100%;
+//border:1px solid #f00;
+border-top:5px solid #DDD;
+}
+
+.subp{
+padding-top:10px;
+//border:1px solid #00f;
+}
+
+/********pic blow up************/
+
+.divcss_pleft_1{
+padding-top:10px;
+margin-bottom:-20px;
+float:left;
+width:18%;
+transition:all 0.5s;
+}
+
+.divcss_pleft_1 img{
+box-shadow:5px 2px 15px #000;
+border:1px solid #FAA;
+transition:all 0.5s;
+-ms-transition:all 0.5s; 
+-moz-transition:all 0.5s; /* Firefox 4 */
+-webkit-transition:all 0.5s; /* Safari and Chrome */
+-o-transition:all 0.5s; /* Opera */
+
+}
+
+.divcss_pleft_1:hover img{
+position:absolute;
+width:580px;
+z-index:2;
+}
+
+/*****word part for high pic********/
+
+.divcss_pright_pichigh{
+float:right;
+width:78%;
+//border:1px solid #f00;
+padding-top:7%;
+padding-bottom:7%;
+font-family:Constantia;
+font-size:1.1em;
+} 
+
+.divcss_pright_pichigh a{
+color:#05E;
+text-decoration:none;
+font-style:italic;
+}
+
+.divcss_pright_pichigh a:hover{
+color:#05E;
+}
+
+/*****word part for short pic********/
+
+.divcss_pright_picshort{
+float:right;
+width:78%;
+//border:1px solid #f00;
+padding-top:15px;
+margin-bottom:-20px;
+font-family:Constantia;
+font-size:1.1em;
+} 
+
+.divcss_pright_picshort a{
+color:#05E;
+text-decoration:none;
+font-style:italic;
+}
+
+.divcss_pright_picshort a:hover{
+color:#05E;
+}
+
+/*****************************/
+.divcss_pright_1{
+float:right;
+width:78%;
+//border:1px solid #f00;
+padding-top:40px;
+padding-bottom:18px;
+margin-bottom:-20px;
+font-family:Constantia;
+font-size:1.1em;
+} 
+
+.divcss_pright_1 a{
+color:#05E;
+text-decoration:none;
+font-style:italic;
+}
+
+.divcss_pright_1 a:hover{
+color:#05E;
+}
+
+
+
+
+/*****publication general part*******/
+
+.divcss_pleft{
+padding-top:10px;
+margin-bottom:-20px;
+float:left;
+width:18%;
+}
+
+.divcss_pleft img{
+box-shadow:5px 2px 15px #000;
+border:1px solid #FAA;
+}
+ 
+.divcss_pright{
+float:right;
+width:78%;
+//border:1px solid #f00;
+padding-top:15px;
+
+font-family:Constantia;
+font-size:1.1em;
+} 
+
+.divcss_pright a{
+color:#05E;
+text-decoration:none;
+font-style:italic;
+}
+
+.divcss_pright a:hover{
+color:#05E;
+}
+
+
+/***********Calendar Part**********/
+.divcalendar{
+width:100%;
+box-shadow:5px 2px 15px #000;
+text-align:center;
+}
+
+.divcalendarlicss{
+border-bottom:1px solid #DDD;
+
+padding-left:0.5em;
+font-family:Georgia;
+font-size:1.05em;
+color:#444;
+
+}
+
+.calendarli_1{
+width:25%;
+float:left;
+padding-top:0.5em;
+padding-bottom:0.5em;
+//border:1px solid ;
+}
+
+.calendarli_2{
+width:25%;
+float:left;
+padding-top:0.5em;
+padding-bottom:0.5em;
+border-left:1px solid #AAA;
+}
+
+.calendarli_3{
+width:25%;
+float:left;
+padding-top:0.5em;
+padding-bottom:0.5em;
+border-left:1px solid #AAA;
+}
+
+.calendarli_4{
+width:25%;
+float:left;
+padding-top:0.5em;
+padding-bottom:0.5em;
+border-left:1px solid #AAA;
+}
+
+
+/*************************************/
+/* Default css file for jemdoc. */
+
+.test{
+   width:110%;
+   margin-left:-5%;
+   margin-top:-4em;
+}
+
+table#tlayout {
+    margin-top:-2em;
+    border-collapse: collapse;
+    background: white;
+    font-family:Georgia,serif
+}
+
+
+#layout-menu {
+	background: #fdf4f2;
+	border: 1px solid #fff;
+	border-top:1px solid;
+	padding-top: 0.5em;
+	padding-left: 8px;
+	padding-right: 8px;
+	font-size: 15px;
+	width: auto;
+	white-space: nowrap;
+    text-align: left;
+    vertical-align: top;
+}
+
+#layout-menu td {
+	background: #f3e6e6;
+    vertical-align: top;
+}
+
+#layout-content {
+	padding-top: 1.0em;
+	padding-left: 1.0em;
+	padding-right: 1.0em;
+    border: 1px solid #fff;
+    border-top:1px solid;
+    background: white;
+    text-align: left;
+    vertical-align: top;
+}
+
+table#tlayout #layout-menu a {
+	line-height: 1.5em;
+	margin-left: 0.5em;
+    //color:#000;
+}
+
+tt {
+    background: #ffffdd;
+}
+
+pre, tt {
+	font-size: 90%;
+	font-family: monaco, monospace;
+}
+
+table#tlayout a, a > tt {
+	color: #430086;
+	//text-decoration: underline;
+}
+a:hover {
+	text-decoration:underline;
+	color: #430086;
+}
+
+#layout-menu a.current:link, #layout-menu a.current:visited {
+	color: #8b0000;
+	border-bottom: 1px gray solid;
+}
+#layout-menu a:link, #layout-menu a:visited, #layout-menu a:hover {
+	color: #8b0000;
+	text-decoration: none;
+}
+
+
+div.menu-category {
+	border-bottom: 1px solid gray;
+	margin-top: 0.8em;
+	padding-top: 0.2em;
+	padding-bottom: 0.1em;
+	font-weight: bold;
+    margin-left:-8px;
+}
+
+table#tlayout .menu-category a{
+    font-size:1.1em;
+    color:#333;
+}
+
+div.menu-item {
+	padding-left: 16px;
+	text-indent: -16px;
+}
+
+div#toptitle {
+	padding-bottom: 0.2em;
+	margin-bottom: 1.5em;
+	border-bottom: 3px double gray;
+}
+
+/* Reduce space if we begin the page with a title. */
+div#toptitle + h2, div#toptitle + h3 {
+	margin-top: -0.7em;
+}
+
+div#subtitle {
+	margin-top: 0.0em;
+	margin-bottom: 0.0em;
+	padding-top: 0em;
+	padding-bottom: 0.1em;
+}
+
+strong {
+	font-weight: bold;
+}
+
+
+table#tlayout h1,table#tlayout h2,table#tlayout h3 {
+	color: #6937CD;
+	margin-top: 0.7em;
+	margin-bottom: 0.3em;
+	padding-bottom: 0.2em;
+	line-height: 1.0;
+	padding-top: 0.5em;
+	border-bottom: 1px solid #aaaaaa;
+}
+
+table#tlayout h1{
+    font-size:2.2em;  
+}
+
+table#tlayout h2 {
+	padding-top: 0.8em;
+	font-size: 180%;
+}
+
+table#tlayout h2 + h3 {
+    padding-top: 0.2em;
+}
+
+table#tlayout h3 {
+	font-size: 110%;
+	border-bottom: none;
+}
+
+table#tlayout p {
+	margin-top: 0.0em;
+	margin-bottom: 0.8em;
+	padding: 0;
+	line-height: 1.3;
+}
+
+pre {
+	padding: 0;
+	margin: 0;
+}
+
+
+
+table#tlayout ul, ol, dl {
+	margin-top: 0.2em;
+	padding-top: 0;
+	margin-bottom: 0.8em;
+}
+
+table#tlayout dt {
+	margin-top: 0.5em;
+	margin-bottom: 0;
+}
+
+table#tlayout dl {
+	margin-left: 20px;
+}
+
+table#tlayout dd {
+	color: #222222;
+}
+
+table#tlayout dd > *:first-child {
+	margin-top: 0;
+}
+
+table#tlayout ul {
+	list-style-position: outside;
+	list-style-type: square;
+//    border:1px solid #00f;
+    padding-left:2.5em;
+}
+
+table#tlayout p + ul, p + ol {
+	margin-top: -0.5em;
+}
+
+table#tlayout li ul, li ol {
+	margin-top: -0.3em;
+}
+
+table#tlayout ol {
+	list-style-position: outside;
+	list-style-type: decimal;
+}
+
+table#tlayout li p, dd p {
+	margin-bottom: 0.3em;
+}
+
+
+table#tlayout ol ol {
+	list-style-type: lower-alpha;
+}
+
+table#tlayout ol ol ol {
+	list-style-type: lower-roman;
+}
+
+table#tlayout p + div.codeblock {
+	margin-top: -0.6em;
+}
+
+table#tlayout div.codeblock, div.infoblock {
+	margin-right: 0%;
+	margin-top: 1.2em;
+	margin-bottom: 1.3em;
+}
+
+table#tlayout div.blocktitle {
+	font-weight: bold;
+	color: #8b0000;
+	margin-top: 1.2em;
+	margin-bottom: 0.1em;
+}
+
+table#tlayout div.blockcontent {
+	border: 1px solid silver;
+	padding: 0.3em 0.5em;
+}
+
+table#tlayout div.infoblock > div.blockcontent {
+	background: #ffffee;
+}
+
+table#tlayout div.blockcontent p + ul, div.blockcontent p + ol {
+	margin-top: 0.4em;
+}
+
+table#tlayout div.infoblock p {
+	margin-bottom: 0em;
+}
+
+table#tlayout div.infoblock li p, div.infoblock dd p {
+	margin-bottom: 0.5em;
+}
+
+table#tlayout div.infoblock p + p {
+	margin-top: 0.8em;
+}
+
+table#tlayout div.codeblock > div.blockcontent {
+	background: #f6f6f6;
+}
+
+table#tlayout span.pycommand {
+	color: #000070;
+}
+
+table#tlayout span.statement {
+	color: #008800;
+}
+table#tlayout span.builtin {
+	color: #000088;
+}
+table#tlayout span.special {
+	color: #990000;
+}
+table#tlayout span.operator {
+	color: #880000;
+}
+table#tlayout span.error {
+	color: #aa0000;
+}
+
+
+@media print {
+	#layout-menu { display: none; }
+}
+
+#fwtitle {
+	margin: 2px;
+}
+
+#fwtitle #toptitle {
+	padding-left: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+#layout-content h1:first-child, #layout-content h2:first-child, #layout-content h3:first-child {
+	margin-top: -0.7em;
+}
+
+table#tlayout div#toptitle h1, #layout-content div#toptitle h1 {
+	margin-bottom: 0.0em;
+	padding-bottom: 0.1em;
+	padding-top: 0;
+	margin-top: 0.5em;
+	border-bottom: none;
+}
+
+
+table {
+    border: 1px solid #333;
+    margin: 0 auto;
+    background: #fff;
+}
+
+table.icon {
+    border: 0px solid #333;
+    background: #fff;
+}
+
+
+td {
+    padding: 2px;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    text-align: left;
+    border: 0px solid gray;
+}
+
+
+table.imgtable, table.imgtable td {
+    border: 0px solid #333;
+    text-align: left;
+    margin: 0 auto;
+    vertical-align: top;
+}
+
+.project-subtitle{
+font-size:1.1em;
+padding-top:10px;
+padding-bottom:10px;
+margin-left:-2.2em;
+font-weight:600;
+}
+
+/**********Recruitment part************/
+
+@keyframes first
+{
+0%  {color:#ffffff;left:-10%}
+100% {left:0%}
+}
+
+@keyframes second
+{
+0%  {color:#ffffff;bottom:-100px}
+100% {bottom:0px}
+}
+
+@keyframes third
+{
+0%  {color:#ffffff;left:-10%}
+100% {left:0%}
+}
+
+@keyframes forth
+{
+0%  {color:#ffffff;right:-10%}
+100% {right:0%}
+}
+
+
+.recruitment-container{
+	//font-family:Georgia;
+	margin-top:-5%;
+}
+
+.summary{
+line-height:1.8em;
+padding-left:0.3em;
+color:#ee0000;
+width:100%;
+font-size:1.25em;
+position:relative;
+animation: third 1.5s;
+}
+.sub-summary
+{
+font-size:1.1em;
+padding-left:0.3em;
+width:100%;
+position:relative;
+animation: forth 1.5s;
+}
+.recruitment-title{
+font-family:Georgia;
+background:#ddd;
+padding-left:0.3em;
+font-size:1.8em;
+margin-top:50px;
+position:relative;
+animation: first 1.5s;
+}
+
+.recruitment-content{
+line-height:1.8em;
+padding-top:1em;
+padding-left:0.3em;
+
+font-size:1.1em;
+position:relative;
+animation: second 1.5s;
+}
+
+.reruitment-teacher{
+color:#223399;
+margin-top:-15px;
+width:50%;
+font-size:1.2em;
+}
+
+.reruitment-teacher1{
+color:#223399;
+width:50%;
+font-size:1.2em;
+}
+
+
+</style>
+<script>
+        $(function(){
+            var obj = new zoom('mask', 'bigimg','smallimg');
+            obj.init();
+        })
+    </script>
+</head>
+
+<body>
+<br>
+<ol id="menu" class="init">
+  <li><a href="https://vis-opt-group.github.io/People.html">People</a></li>
+    <li><a href="https://vis-opt-group.github.io/Project.html">Project</a></li>
+    <li><a href="https://vis-opt-group.github.io/Publication.html">Publication</a></li>
+    <li class="cur"><a href="https://vis-opt-group.github.io/">Home</a></li>
+  </ol>
+<div id="container">   <div id="site_title_big"><a href="https://rsliu.tech/" style="text-decoration: none"><img src="./vog_files/3.png" width="600"></a></div>
+<br><br>
+<div class="wrap">
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+<article id="post-2308" class="post-2308 page type-page status-publish hentry">
+	<div class="entry-content">
+<div class="test">
+<p></p><table id="tlayout" summary="Table for page layout.">
+<tbody>
+<tr>
+<td id="layout-content"></td>
+</tr>
+<tr valign="top"><!-----------------------------侧边�?---------------------------------------------------->
+<td id="layout-content">
+<!--<h1>Welcome</h1>--!>
+<table class="imgtable">
+<tbody>
+<tr>
+<td width="200px" height="200px">
+<div class="people_image_large"><img src="./vog_files/Publication/ma_CVPR_2022.png" width="195px"></div>
+</td>
+<td width="1000px" height="200px"><p></p><b style="font-size:25px;">Toward Fast, Flexible, and Robust Low-Light Image Enhancement.</b><p></p>
+<p style="font-size:20px">Long Ma, Tengyu Ma, Risheng Liu*, Xin Fan, Zhongxuan Luo</p>
+<p style="font-size:20px;">Abstract:
+Existing low-light image enhancement techniques are mostly not only difficult to deal with both visual quality and computational efficiency but also commonly invalid in unknown complex scenarios. In this paper, we develop a new Self-Calibrated Illumination (SCI) learning framework for fast, flexible, and robust brightening images in real-world low-light scenarios. To be specific, we establish a cascaded illumination learning process with weight sharing to handle this task. Considering the computational burden of the cascaded pattern, we construct the selfcalibrated module which realizes the convergence between results of each stage, producing the gains that only use the single basic block for inference (yet has not been exploited in previous works), which drastically diminishes computation cost. We then define the unsupervised training loss to elevate the model capability that can adapt general scenes. Further, we make comprehensive explorations to excavate SCI' s inherent properties (lacking in existing works) including operation-insensitive adaptability (acquiring stable performance under the settings of different simple operations) and model-irrelevant generality (can be applied to illumination-based existing works to improve performance). Finally, plenty of experiments and ablation studies fully indicate our superiority in both quality and efficiency. Applications on low-light face detection and nighttime semantic segmentation fully reveal the latent practical values for SCI. The source code will be made publicly available.
+<br>
+</p>
+<table class="icon">
+<tr>
+<td width="925px">
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+</tr>
+</tbody>
+</table>
+
+
+</td></tr></tbody></table>
+  <div class="newline_10"></div>
+  
+  
+  <div style="clear:both;"></div>
+
+  <script type="text/javascript" src="./Publication_files/jquery.min.js.下载"></script> 
+
+  <script type="text/javascript" src="./Publication_files/jquery.fancybox-1.3.4.pack.js.下载"></script>
+
+  <link rel="stylesheet" type="text/css" href="./Publication_files/jquery.fancybox-1.3.4.css" media="screen">
+
+  <script language="javascript" type="text/javascript">
+
+function toggleDetails (id) {
+
+  var element = document.getElementById(id);
+
+	if(element.style.display=='block') element.style.display = 'none';
+
+	else	                             element.style.display = 'block';
+
+}
+
+</script>
+
+
+    <div id="newline_5"></div>
+    <div id="footer"> © 2021 |  vog  </div> </div>
+<img src="http://www.vog/" alt="" class="bigimg">
+<div class="mask"> <img src="./vog_files/close.png" alt=""> </div>
+
+</body></html>
+
