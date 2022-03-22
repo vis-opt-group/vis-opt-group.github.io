@@ -8,8 +8,8 @@
 <link type="image/x-icon" rel="shortcut icon" href="http://www.vog/logo.ico">
 
 <link rel="stylesheet" type="text/css" media="all" href="./vog_files/style.css">
-<script src="./vog_files/jquery.js.???Â¨Â¨??"></script> 
-<script src="./vog_files/zoom.js.???Â¨Â¨??"></script>
+<script src="./vog_files/jquery.js.???¨¨??"></script> 
+<script src="./vog_files/zoom.js.???¨¨??"></script>
 <style>
 body{font-family:"Georgia"}
 init {list-style-type:none}
@@ -966,10 +966,64 @@ font-size:1.2em;
 <tr>
 <td id="layout-content"></td>
 </tr>
-<tr valign="top"><!-----------------------------??Â¡Ã¬Â¨Â¨?????---------------------------------------------------->
+<tr valign="top"><!-----------------------------??¡ì¨¨?????---------------------------------------------------->
 <td id="layout-content" width="1200px">
 <h1>2022</h1></td></tr>
 
+<tr>
+<td id="layout-content" width="1200px">
+<div class="publication_container" onclick="toggleDetails(&#39;111ss180&#39;);">
+
+    <div class="publication_image"><img src="./vog_files/Publication/TMM_malong_22.png" width="100" height="100"></div>
+
+    <div class="publication_title"><b style="font-size:14px">Low-Light Image Enhancement via Self-Reinforced Retinex Projection Model.</b><br>
+
+      <p style="line-height:2em">Long Ma, <b>Risheng Liu</b>, Yiyang Wang, Xin Fan, Zhongxuan Luo<br><strong><span style="font-size: 12px;"><strong>IEEE TMM</strong></span></strong><b> [<a href="https://ieeexplore.ieee.org/abstract/document/9684913">Paper</a>|<a href="https://github.com/LongMa319/SRRP">Code</a>]</b></p></div>
+
+  </div>
+
+  <div class="publication_detail" id="111ss180" name="111ss180" style="display: none;">
+
+    <div class="publication_abstract"><b style="font-size:15px">Abstract:</b><p style="text-align:justify;line-height:1.5em;"><span style="font-size: 15px; background-color: rgb(255, 255, 255);">Low-light image enhancement aims to improve the
+quality of images captured under low-lightening conditions,
+which is a fundamental problem in computer vision and multimedia
+areas. Although many efforts have been invested over
+the years, existing illumination-based models tend to generate
+unnatural-looking results (e.g., over-exposure). It is because that
+the widely-adopted illumination adjustment (e.g., Gamma Correction)
+breaks down the favorable smoothness property of the
+original illumination derived from the well-designed illumination
+estimation model. To settle this issue, a great-efficiency and
+high-quality Self-Reinforced Retinex Projection (SRRP) model is
+developed in this paper, which contains optimization modules of
+both illumination and reflectance layers. Specifically, we construct
+a new fidelity term with the self-reinforced function for the
+illumination optimization to eliminate the dependence of the
+illumination adjustment to obtain a desired illumination with the
+excellent smoothing property. By introducing a flexible feasible
+constraint, we obtain a reflectance optimization module with
+projection. Owing to its flexibility, we can extend our model
+to an enhanced version by integrating a data-driven denoising
+mechanism as the projection, which is able to effectively handle
+the generated noises/artifacts in the enhanced procedure. In the
+experimental part, on one side, we make ample comparative
+assessments on multiple benchmarks with considerable state-ofthe-
+art methods. These evaluations fully verify the outstanding
+performance of our method, in terms of the qualitative and
+quantitative analyses and execution efficiency. On the other side,
+we also conduct extensive analytical experiments to indicate the
+effectiveness and advantages of our proposed model. Code is
+available at https://github.com/LongMa319/SRRP.</span></p><br>
+
+<div class="newline_10"></div>
+
+      
+      </div>
+
+
+</div>
+</div>
+</td></tr>
 
 
 <tr>
@@ -980,7 +1034,7 @@ font-size:1.2em;
 
     <div class="publication_title"><b style="font-size:14px">Attention-guided Global-local Adversarial Learning for Detail-preserving Multi-exposure Image Fusion.</b><br>
 
-      <p style="line-height:2em">Jinyuan Liu, Jingjie Shang, <b>Risheng Liu</b>, Xin Fan<br><strong><span style="font-size: 12px;"><strong>IEEE TCSVT</strong></span></strong><b> [<a href="https://ieeexplore.ieee.org/abstract/document/9684913">Paper</a>]</b></p></div>
+      <p style="line-height:2em">Jinyuan Liu, Jingjie Shang, <b>Risheng Liu</b>, Xin Fan<br><strong><span style="font-size: 12px;"><strong>IEEE TCSVT</strong></span></strong><b> [<a href="https://rsliu.tech/SRRP.html">Paper</a>]</b></p></div>
 
   </div>
 
@@ -1036,7 +1090,7 @@ details, clear targets, and faithful color.</span></p><br>
 
     <div class="publication_title"><b style="font-size:14px">Toward Fast, Flexible, and Robust Low-Light Image Enhancement.</b><br>
 
-      <p style="line-height:2em">Long Ma, Tengyu Ma, <b>Risheng Liu*</b>, Xin Fan, Zhongxuan Luo<br><strong><span style="font-size: 12px;"><strong>CVPR</strong></span></strong><b> [<a href="https://vis-opt-group.github.io/SCI_Projectpage.html">Project Page</a>]</b></p></div>
+      <p style="line-height:2em">Long Ma, Tengyu Ma, <b>Risheng Liu*</b>, Xin Fan, Zhongxuan Luo<br><strong><span style="font-size: 12px;"><strong>CVPR</strong></span></strong><b>[<a href="https://vis-opt-group.github.io/">Project Page</a>]</b></p></div>
 
   </div>
 
@@ -1092,7 +1146,7 @@ The source code will be made publicly available.</span></p><br>
 
     <div class="publication_abstract"><b style="font-size:15px">Abstract:</b><p style="text-align:justify;line-height:1.5em;"><span style="font-size: 15px; background-color: rgb(255, 255, 255);">To overcome the overfitting issue of dehazing models
 trained on synthetic hazy-clean image pairs, many recent
-methods attempted to improve modelsÂ¡Â¯ generalization ability
+methods attempted to improve models¡¯ generalization ability
 by training on unpaired data. Most of them simply formulate
 dehazing and rehazing cycles, yet ignore the physical
 properties of the real-world hazy environment, i.e. the
@@ -1128,7 +1182,7 @@ and FLOPs. Our code will be made publicly available.</span></p><br>
 
     <div class="publication_image"><img src="./vog_files/Publication/Jiaqi_CVPR_2022.png" width="100" height="100"></div>
 
-    <div class="publication_title"><b style="font-size:14px">Segment, Magnify and Reiterate: Detecting Camouflaged Objects the Hard Way.</b><br>
+    <div class="publication_title"><b style="font-size:14px">Segment, Magnify and Reiterate: Detecting Camouflaged Objects the HardWay.</b><br>
 
       <p style="line-height:2em">Qi Jia, Shuilian Yao, Yu Liu, Xin Fan, <b>Risheng Liu</b>, Zhongxuan Luo<br><strong><span style="font-size: 12px;"><strong>CVPR</strong></span></strong><b></b></p></div>
 
@@ -1210,7 +1264,7 @@ the-art approaches on various challenging scenarios.</span></p><br>
 
 
 
-<tr valign="top"><!-----------------------------??Â¡Ã¬Â¨Â¨?????---------------------------------------------------->
+<tr valign="top"><!-----------------------------??¡ì¨¨?????---------------------------------------------------->
 <td id="layout-content" width="1200px">
 <h1>2021</h1></td></tr>
 <tr>
@@ -1472,7 +1526,7 @@ over the state-of-the-art works.</span></p><br>
 
     <div class="publication_title"><b style="font-size:14px">Underexposed Image Correction via Hybrid Priors Navigated Deep Propagation.</b><br>
 
-      <p style="line-height:2em"><b>Risheng Liu</b>, Long Ma, Yuxi Zhang, Xin Fan, Zhongxuan Luo<br><strong><span style="font-size: 12px;"><strong>IEEE TNNLS</strong></span></strong><b> [<a href="https://arxiv.org/pdf/1907.07408">Paper</a>]</b></p></div>
+      <p style="line-height:2em"><b>Risheng Liu</b>, Long Ma, Jiaao Zhang, Xin Fan, Zhongxuan Luo<br><strong><span style="font-size: 12px;"><strong>IEEE TNNLS</strong></span></strong><b> [<a href="https://arxiv.org/pdf/1907.07408">Paper</a>]</b></p></div>
 
   </div>
 
@@ -1860,7 +1914,7 @@ url = {https://proceedings.mlr.press/v139/liu21o.html},<br>
 
     <div class="publication_title"><b style="font-size:14px">Towards Gradient-based Bilevel Optimization with Non-convex Followers and Beyond.</b><br>
 
-      <p style="line-height:2em"><b>Risheng Liu</b>, Yaohua Liu, Shangzhi Zeng, Jin Zhang<br><strong><span style="font-size: 12px;"><strong>NeurIPS <b style="color:red">(Spotlight, Acceptance Rate &le; 3%)</b></strong></span></strong><b> [<a href="https://arxiv.org/pdf/2110.00455.pdf">Paper</a>|<a href="https://github.com/vis-opt-group/IAPTT-GM">Code</a>]</b></p></div>
+      <p style="line-height:2em"><b>Risheng Liu</b>, Yaohua Liu, Shanghai Zeng, Jin Zhang<br><strong><span style="font-size: 12px;"><strong>NeurIPS <b style="color:red">(Spotlight, Acceptance Rate &le; 3%)</b></strong></span></strong><b> [<a href="https://arxiv.org/pdf/2110.00455.pdf">Paper</a>|<a href="https://github.com/vis-opt-group/IAPTT-GM">Code</a>]</b></p></div>
 
   </div>
 
@@ -3189,9 +3243,9 @@ speedups and is much faster than existing compared methods.</span></p><br>
   
   <div style="clear:both;"></div>
 
-  <script type="text/javascript" src="./Publication_files/jquery.min.js.???Â¨Â¨??"></script> 
+  <script type="text/javascript" src="./Publication_files/jquery.min.js.???¨¨??"></script> 
 
-  <script type="text/javascript" src="./Publication_files/jquery.fancybox-1.3.4.pack.js.???Â¨Â¨??"></script>
+  <script type="text/javascript" src="./Publication_files/jquery.fancybox-1.3.4.pack.js.???¨¨??"></script>
 
   <link rel="stylesheet" type="text/css" href="./Publication_files/jquery.fancybox-1.3.4.css" media="screen">
 
