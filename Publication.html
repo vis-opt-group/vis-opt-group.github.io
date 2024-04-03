@@ -971,6 +971,29 @@ font-size:1.2em;
 <td id="layout-content" width="1200px">
 
 <h1>2024</h1></td></tr>
+
+<tr>
+<td id="layout-content" width="1200px">
+<div class="publication_container" onclick="toggleDetails(&#39;111ss683&#39;);">
+
+    <div class="publication_image"><img src="./vog_files/Publication/tpami_24.png" width="100" height="100"></div>
+
+    <div class="publication_title"><b style="font-size:14px">A Task-guided, Implicitly-searched and Meta-initialized Deep Model for Image Fusion.</b><br>
+
+      <p style="line-height:2em"><b>Risheng Liu*</b>, Zhu Liu, Jinyuan Liu, Xin Fan, Zhongxuan Luo<br><strong><span style="font-size: 12px;"><strong>IEEE TPAMI <b style="color:red"></b></strong></span></strong><b>[<a href="https://ieeexplore.ieee.org/abstract/document/10480582/">Paper</a>]</b></p></div>
+
+  </div>
+
+  <div class="publication_detail" id="111ss683" name="111ss683" style="display: none;">
+
+    <div class="publication_abstract"><b style="font-size:15px">Abstract:</b><p style="text-align:justify;line-height:1.5em;"><span style="font-size: 15px; background-color: rgb(255, 255, 255);">Image fusion plays a key role in a variety of multi-sensor-based vision systems, especially for enhancing visual quality and/or extracting aggregated features for perception. However, most existing methods just consider image fusion as an individual task, thus ignoring its underlying relationship with these downstream vision problems. Furthermore, designing proper fusion architectures often requires huge engineering labor. It also lacks mechanisms to improve the flexibility and generalization ability of current fusion approaches. To mitigate these issues, we establish a Task-guided, Implicit-searched and Meta-initialized (TIM) deep model to address the image fusion problem in a challenging real-world scenario. Specifically, we first propose a constrained strategy to incorporate information from downstream tasks to guide the unsupervised learning process of image fusion. Within this framework, we then design an implicit search scheme to automatically discover compact architectures for our fusion model with high efficiency. In addition, a pretext meta initialization technique is introduced to leverage divergence fusion data to support fast adaptation for different kinds of image fusion tasks. Qualitative and quantitative experimental results on different categories of image fusion problems and related downstream tasks (e.g., visual enhancement and semantic understanding) substantiate the flexibility and effectiveness of our TIM.</span></p><br>
+
+</p> </div>
+</div>
+</div>
+</td></tr>
+
+
 <tr>
 <td id="layout-content" width="1200px">
 <div class="publication_container" onclick="toggleDetails(&#39;111ss682&#39;);">
@@ -986,6 +1009,27 @@ font-size:1.2em;
   <div class="publication_detail" id="111ss682" name="111ss682" style="display: none;">
 
     <div class="publication_abstract"><b style="font-size:15px">Abstract:</b><p style="text-align:justify;line-height:1.5em;"><span style="font-size: 15px; background-color: rgb(255, 255, 255);">The complexity of learning problems, such as Generative Adversarial Network (GAN) and its variants, multi-task and meta-learning, hyper-parameter learning, and a variety of real-world vision applications, demands a deeper understanding of their underlying coupling mechanisms. Existing approaches often address these problems in isolation, lacking a unified perspective that can reveal commonalities and enable effective solutions. Therefore, in this work, we proposed a new framework, named Learning with Constraint Learning (LwCL), that can holistically examine challenges and provide a unified methodology to tackle all the above-mentioned complex learning and vision problems. Specifically, LwCL is designed as a general hierarchical optimization model that captures the essence of these diverse learning and vision problems. Furthermore, we develop a gradient-response based fast solution strategy to overcome optimization challenges of the LwCL framework. Our proposed framework efficiently addresses a wide range of applications in learning and vision, encompassing three categories and nine different problem types. Extensive experiments on synthetic tasks and real-world applications verify the effectiveness of our approach. The LwCL framework offers a comprehensive solution for tackling complex machine learning and computer vision problems, bridging the gap between theory and practice.</span></p><br>
+
+</p> </div>
+</div>
+</div>
+</td></tr>
+
+<tr>
+<td id="layout-content" width="1200px">
+<div class="publication_container" onclick="toggleDetails(&#39;111ss684&#39;);">
+
+    <div class="publication_image"><img src="./vog_files/Publication/CVPR_24.png" width="100" height="100"></div>
+
+    <div class="publication_title"><b style="font-size:14px">Bi-level Learning of Task-Specific Decoders for Joint Registration and One-Shot Segmentation.</b><br>
+
+      <p style="line-height:2em">Xin Fan, Xiaolin Wang, Jiaxin Gao, Jia Wang, Zhongxuan Luo, <b>Risheng Liu</b><br><strong><span style="font-size: 12px;"><strong>CVPR<b style="color:red"></b></strong></span></strong><b>[<a href="https://openreview.net/forum?id=2V5ZA3vXtv&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3Dthecvf.com%2FCVPR%2F2024%2FConference%2FAuthors%23your-submissions)">Paper</a>|<a href="https://github.com/Coradlut/Bi-JROS">Code</a>]</b></p></div>
+
+  </div>
+
+  <div class="publication_detail" id="111ss684" name="111ss684" style="display: none;">
+
+    <div class="publication_abstract"><b style="font-size:15px">Abstract:</b><p style="text-align:justify;line-height:1.5em;"><span style="font-size: 15px; background-color: rgb(255, 255, 255);">One-shot medical image segmentation (MIS) aims to cope with the expensive, time-consuming, and inherent human bias annotations. One prevalent method to address one-shot MIS is joint registration and segmentation (JRS) with a shared encoder, which mainly explores the voxel-wise correspondence between the labeled data and unlabeled data for better segmentation. However, this method omits underlying connections between task-specific decoders for segmentation and registration, leading to unstable training. In this paper, we propose a novel Bi-level Learning of Task-Specific Decoders for one-shot MIS, employing a pretrained fixed shared encoder that is proved to be more quickly adapted to brand-new datasets than existing JRS without fixed shared encoder paradigm. To be more specific, we introduce a bi-level optimization training strategy considering registration as a major objective and segmentation as a learnable constraint by leveraging inter-task coupling dependencies. Furthermore, we design an appearance conformity constraint strategy that learns the backward transformations generating the fake labeled data used to perform data augmentation instead of the labeled image, to avoid performance degradation caused by inconsistent styles between unlabeled data and labeled data in previous methods. Extensive experiments on the brain MRI task across ABIDE, ADNI, and PPMI datasets demonstrate that the proposed Bi-JROS outperforms state-of-the-art one-shot MIS methods for both segmentation and registration tasks. The code will be available at https://github.com/Coradlut/Bi-JROS.</span></p><br>
 
 </p> </div>
 </div>
