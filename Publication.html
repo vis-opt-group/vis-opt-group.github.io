@@ -972,6 +972,56 @@ font-size:1.2em;
 
 <h1>2025</h1></td></tr>
 
+
+<tr>
+<td id="layout-content" width="1200px">
+<div class="publication_container" onclick="toggleDetails(&#39;1119&#39;);">
+
+    <div class="publication_image"><img src="./vog_files/Publication/AAAI26.png" width="100" height="100"></div>
+
+    <div class="publication_title"><b style="font-size:14px">	
+AHybrid Space Model for Misaligned Multi-modality Image Fusion.</b><br>
+
+      <p style="line-height:2em">Yi Xiao, Jia Wang, Zhu Liu, Di Wang, Jinyuan Liu, <b>Risheng Liu*</b><br><strong><span style="font-size: 12px;"><strong>AAAI<b style="color:red"></b></strong></span></strong></p></div>
+
+  </div>
+
+  <div class="publication_detail" id="1119" name="1119" style="display: none;">
+
+    <div class="publication_abstract"><b style="font-size:15px">Abstract:</b><p style="text-align:justify;line-height:1.5em;"><span style="font-size: 15px; background-color: rgb(255, 255, 255);"> Infrared and visible image fusion aims to integrate complementary information, such as thermal saliency from infrared
+ imagery and fine-grained texture details from visible imagery.
+ However, real-world multi-modal misalignment and geomet
+ric deformation often introduce severe artifacts. Most exist
+ing methods focus on feature extraction within Euclidean
+ space, thereby neglecting the inherent hierarchical structures
+ embedded in multimodal representations. While Euclidean
+ space excels at preserving local structural details and sup
+porting efficient computation, hyperbolic space is naturally
+ suited for modeling hierarchical relationships due to its geo
+metric properties. Building upon these observations, this pa
+per proposes a unified framework that jointly optimizes im
+age registration and fusion through a dual-space architecture.
+ This architecture synergistically combines the local fidelity
+ of Euclidean geometry with the hierarchical modeling capa
+bility of hyperbolic geometry to enhance multimodal repre
+sentation learning. Specifically, this paper introduces Hyper
+bolic Coupled Contrastive Learning Optimization (HCCLO),
+ which aligns and optimizes the hierarchical structures of in
+frared and visible embeddings in hyperbolic space. Moreover,
+ this paper designs a task-adaptive dual-space features fusion
+ mechanism, which dynamically balances and fuses Euclidean
+ local features with hyperbolic hierarchical representations,
+ thereby improving adaptability for downstream tasks. Exten
+sive experiments on misaligned multimodal datasets demon
+strate that our method achieves state-of-the-art performance,
+ while effectively capturing both spatial dependencies and hi
+erarchical semantics.</span></p><br>
+
+</p> </div>
+</div>
+</div>
+</td></tr>
+
 <tr>
 <td id="layout-content" width="1200px">
 <div class="publication_container" onclick="toggleDetails(&#39;09252&#39;);">
@@ -1053,7 +1103,7 @@ tion but also significantly improves performance on complex degradation scenes,
 
 <tr>
 <td id="layout-content" width="1200px">
-<div class="publication_container" onclick="toggleDetails(&#39;09055&#39;);">
+<div class="publication_container" onclick="toggleDetails(&#39;09056&#39;);">
 
     <div class="publication_image"><img src="./vog_files/Publication/MA_TPAMI25.png" width="100" height="100"></div>
 
@@ -1063,7 +1113,7 @@ tion but also significantly improves performance on complex degradation scenes,
 
   </div>
 
-  <div class="publication_detail" id="0909" name="0909" style="display: none;">
+  <div class="publication_detail" id="09056" name="09056" style="display: none;">
 
     <div class="publication_abstract"><b style="font-size:15px">Abstract:</b><p style="text-align:justify;line-height:1.5em;"><span style="font-size: 15px; background-color: rgb(255, 255, 255);">Convolutional Neural Networks (CNNs) have shown significant success in the low-light image enhancement task. However, most of existing works encounter challenges in balancing quality and efficiency simultaneously. This limitation hinders practical applicability in real-world scenarios and downstream vision tasks. To overcome these obstacles, we propose a Self-Calibrated Illumination (SCI) learning scheme, introducing a new perspective to boost the model’s capability. Based on a weight-sharing illumination estimation process, we construct an embedded self-calibrator to accelerate stage-level convergence, yielding gains that utilize only a single basic block for inference, which drastically diminishes computation cost. Additionally, by introducing the additivity condition on the basic block, we acquire a reinforced version dubbed SCI++, which disentangles the relationship between the self-calibrator and illumination estimator, providing a more interpretable and effective learning paradigm with faster convergence and better stability. We assess the proposed enhancers on standard benchmarks and in-the-wild datasets, confirming that they can restore clean images from diverse scenes with higher quality and efficiency. The verification on different levels of low-light vision tasks shows our applicability against other methods. The project about this work is publicly available at https://github.com/vis-opt-group/SCI.</span></p><br>
 
