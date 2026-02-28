@@ -974,6 +974,233 @@ font-size:1.2em;
 
 <tr>
 <td id="layout-content" width="1200px">
+<div class="publication_container" onclick="toggleDetails(&#39;02285&#39;);">
+
+    <div class="publication_image"><img src="./vog_files/Publication/26cvpr5.png" width="100" height="100"></div>
+
+    <div class="publication_title"><b style="font-size:14px">	
+HiDRA: Hierarchical Degradation Representation and Adaptation with Generative Priors for Enhancing Infrared Vision.</b><br>
+
+      <p style="line-height:2em">Zihang Chen, Zhu Liu, Changbo Yan, HaoYuan Xu, Jinyuan Liu, <b>Risheng Liu*</b><br><strong><span style="font-size: 12px;"><strong>CVPR<b style="color:red"></b></strong></span></strong></p></div>
+
+  </div>
+
+  <div class="publication_detail" id="02285" name="02285" style="display: none;">
+
+    <div class="publication_abstract"><b style="font-size:15px">Abstract:</b><p style="text-align:justify;line-height:1.5em;"><span style="font-size: 15px; background-color: rgb(255, 255, 255);"> Thermal infrared (TIR) imaging enables robust percep-
+tion in adverse conditions. However, it often suffers from
+complex degradations (e.g., fixed-pattern noise and low-
+resolution) due to sensor limitations and environmental dy-
+namics. Existing methods, whether traditional or learning-
+based, easily fail under composite and varying degrada-
+tion. Pre-trained generative models showcase powerful
+capabilities for alleviating degradations but lack effective
+tools to adapt visible generative priors to TIR-specific char-
+acteristics. To overcome these challenges, we propose a
+Hierarchical Degradation Representation and Adaptation
+(HiDRA) framework to decompose the enhancement proce-
+dure into degradation representation estimation and gen-
+erative model fine-tuning. The degradation representation
+estimation aims to disentangle TIR degradation patterns,
+which then guide the parameter adaptation for thermal im-
+age enhancement. Additionally, we introduce a hierarchical
+adaptation solution that aggregates learning across varying
+degradation levels, further improving robustness under var-
+ious scenarios. Experiments across diverse types and de-
+grees demonstrate the robustness of our approach and fur-
+ther validate its effectiveness on downstream tasks.</span></p><br>
+
+</p> </div>
+</div>
+</div>
+</td></tr>
+
+
+<tr>
+<td id="layout-content" width="1200px">
+<div class="publication_container" onclick="toggleDetails(&#39;02284&#39;);">
+
+    <div class="publication_image"><img src="./vog_files/Publication/26cvpr4.png" width="100" height="100"></div>
+
+    <div class="publication_title"><b style="font-size:14px">	
+Bridging Human Evaluation to Infrared and Visible Image Fusion.</b><br>
+
+      <p style="line-height:2em">Jinyuan Liu, Xingyuan Li, Qingyun Mei, HaoYuan Xu, Zhiying Jiang, Long Ma, <b>Risheng Liu</b>, Xin Fan<br><strong><span style="font-size: 12px;"><strong>CVPR<b style="color:red"></b></strong></span></strong></p></div>
+
+  </div>
+
+  <div class="publication_detail" id="02284" name="02284" style="display: none;">
+
+    <div class="publication_abstract"><b style="font-size:15px">Abstract:</b><p style="text-align:justify;line-height:1.5em;"><span style="font-size: 15px; background-color: rgb(255, 255, 255);"> Infrared and visible image fusion (IVIF) integrates comple-
+mentary modalities to enhance scene perception. Current
+methods predominantly focus on optimizing handcrafted
+losses and objective metrics, often resulting in fusion out-
+comes that do not align with human visual preferences.
+This challenge is further exacerbated by the ill-posed na-
+ture of IVIF, which severely limits its effectiveness in hu-
+man perceptual environments such as security surveillance
+and driver assistance systems. To address these limita-
+tions, we propose a feedback reinforcement framework that
+bridges human evaluation to infrared and visible image
+fusion. To address the lack of human-centric evaluation
+metrics and data, we introduce the first large-scale human
+feedback dataset for IVIF, containing multidimensional sub-
+jective scores and artifact annotations, and enriched by a
+fine-tuned large language model with expert review. Based
+on this dataset, we design a domain-specific reward func-
+tion and train a reward model to quantify perceptual qual-
+ity. Guided by this reward, we fine-tune the fusion net-
+work through Group Relative Policy Optimization, achiev-
+ing state-of-the-art performance that better aligns fused im-
+ages with human aesthetics.</span></p><br>
+
+</p> </div>
+</div>
+</div>
+</td></tr>
+
+
+<tr>
+<td id="layout-content" width="1200px">
+<div class="publication_container" onclick="toggleDetails(&#39;02283&#39;);">
+
+    <div class="publication_image"><img src="./vog_files/Publication/26cvpr3.png" width="100" height="100"></div>
+
+    <div class="publication_title"><b style="font-size:14px">	
+Streaming Diffusion Model for Fast Infrared and Visible Video Fusion.</b><br>
+
+      <p style="line-height:2em">Jinyuan Liu, Ludan Sun, Tengyu Ma, Chunyan Yang, Zhiying Jiang, Long Ma, <b>Risheng Liu</b>, Xin Fan<br><strong><span style="font-size: 12px;"><strong>CVPR<b style="color:red"></b></strong></span></strong></p></div>
+
+  </div>
+
+  <div class="publication_detail" id="02283" name="02283" style="display: none;">
+
+    <div class="publication_abstract"><b style="font-size:15px">Abstract:</b><p style="text-align:justify;line-height:1.5em;"><span style="font-size: 15px; background-color: rgb(255, 255, 255);"> Infrared and visible video fusion is pivotal for robust per-
+ceptual systems, aiming to synthesize a comprehensive
+video stream that leverages both thermal resilience and tex-
+tured details. However, prevailing methods, by treating
+video as independent frames, inherently introduce tempo-
+ral incoherence, such as flickering and ghosting artifacts.
+While diffusion models possess strong generative priors to
+remedy this, their iterative nature is prohibitively slow for
+video. To resolve this fundamental dilemma, we propose a
+streaming diffusion model for efficient infrared and visible
+video fusion, termed SDMFusion. Our key insight is to ex-
+ploit the generative prior of a pre-trained diffusion model
+into a one-step sampling framework, while explicitly mod-
+eling temporal dynamics. We design a memory-augmented
+latent pipeline where a temporal aggregation adapter aligns
+and propagates cross-frame features to ensure coherence,
+supported by a dedicated temporal consistency loss. This
+approach effectively decouples the challenge of achieving
+high fidelity from maintaining temporal stability. Exten-
+sive experiments on four benchmarks demonstrate that our
+method establishes a new state-of-the-art, generating fused
+videos with exceptional spatio-temporal consistency at a
+speed suitable for real-time application.</span></p><br>
+
+</p> </div>
+</div>
+</div>
+</td></tr>
+
+<tr>
+<td id="layout-content" width="1200px">
+<div class="publication_container" onclick="toggleDetails(&#39;02282&#39;);">
+
+    <div class="publication_image"><img src="./vog_files/Publication/26cvpr2.png" width="100" height="100"></div>
+
+    <div class="publication_title"><b style="font-size:14px">	
+Taming Generative Diffusion Model for Task-Oriented Infrared Imaging.</b><br>
+
+      <p style="line-height:2em">Tengyu Ma, Zhilong Dai, Yubo Diao, Guanming An, Long Ma, Jinyuan Liu, <b>Risheng Liu*</b><br><strong><span style="font-size: 12px;"><strong>CVPR<b style="color:red"></b></strong></span></strong></p></div>
+
+  </div>
+
+  <div class="publication_detail" id="02282" name="02282" style="display: none;">
+
+    <div class="publication_abstract"><b style="font-size:15px">Abstract:</b><p style="text-align:justify;line-height:1.5em;"><span style="font-size: 15px; background-color: rgb(255, 255, 255);"> Infrared (IR) imaging is indispensable for perception
+in adverse environments, yet real-world data is often cor-
+rupted by dynamically coupled degradations that impair
+both visual quality and downstream semantic understand-
+ing. Although diffusion models offer powerful generative
+priors, existing approaches remain ill-suited to this setting.
+Their slow multi-step sampling, reliance on RGB-driven
+statistics misaligned with IR physics, and the necessity for
+costly fine-tuning of all model parameters render them im-
+practical for dynamic IR perception. We present a unified
+diffusion framework that re-formulates IR restoration as a
+single-step generative process. The core idea is to associate
+each degraded input with a specific intermediate latent state
+in the diffusion trajectory, enabling the model to reconstruct
+the clean image via a single, direct reverse step. Physical
+realism is further reinforced through an IR-specific spectral
+regularization that preserves the characteristic energy dis-
+tribution of thermal emissions. Addressing the diverse and
+rapidly shifting demands of dynamic IR perception, we fur-
+ther develop a task-aware low-rank adaptation mechanism.
+This mechanism employs a lightweight prompting hypernet-
+work to generate compact modulation parameters, facilitat-
+ing rapid and scalable adaptation ability without retrain-
+ing the entire network. Comprehensive evaluations demon-
+strate that our framework attains state-of-the-art restora-
+tion performance, preserves reliable semantic structures,
+and supports rapid adaptation that generalizes effectively
+across diverse tasks and conditions.</span></p><br>
+
+</p> </div>
+</div>
+</div>
+</td></tr>
+
+
+
+<tr>
+<td id="layout-content" width="1200px">
+<div class="publication_container" onclick="toggleDetails(&#39;02281&#39;);">
+
+    <div class="publication_image"><img src="./vog_files/Publication/26cvpr1.png" width="100" height="100"></div>
+
+    <div class="publication_title"><b style="font-size:14px">	
+BiProLoRA: Bilevel Prompt LoRA for Real Scene Recovery.</b><br>
+
+      <p style="line-height:2em">Nan An, Long Ma, Tengyu Ma, Zhu Liu, Yingchi Liu, <b>Risheng Liu*</b><br><strong><span style="font-size: 12px;"><strong>CVPR<b style="color:red"></b></strong></span></strong></p></div>
+
+  </div>
+
+  <div class="publication_detail" id="02281" name="02281" style="display: none;">
+
+    <div class="publication_abstract"><b style="font-size:15px">Abstract:</b><p style="text-align:justify;line-height:1.5em;"><span style="font-size: 15px; background-color: rgb(255, 255, 255);"> The emergence of large generative models has substantially
+advanced learning-based scene recovery in the synthetic
+domain. However, applying these models directly to real
+scenarios reveals sub-optimal performance stemming from
+the significant distribution gap, alongside poor adaptation
+to complex and unforeseen degradations. Consequently,
+it is imperative to develop a real scene adaptation strat-
+egy that yields faithful restorations with reliable generaliz-
+ability. To this end, we propose Bilevel Prompt LoRA, a
+novel learning paradigm designed to effectively adapt pre-
+trained generative models for real scene recovery. First,
+we introduce a self-supervised distribution-fidelity learn-
+ing scheme to calibrate the autoencoding pathway under
+task-irrelevant real distributions, thereby recovering high-
+fidelity textures. Subsequently, a bilevel joint modeling
+via hyperparameter optimization is further established, em-
+powering robust synthetic-to-real adaptation for both seen
+and unseen scenes by exploiting the complementary advan-
+tages between LoRA and Prompts to foster mutual promo-
+tion. Extensive evaluations on diverse real adverse scenar-
+ios demonstrate our method’s superiority, with comprehen-
+sive algorithm analyses proving our effectiveness. The code
+will be public released upon the acceptance.</span></p><br>
+
+</p> </div>
+</div>
+</div>
+</td></tr>
+
+<tr>
+<td id="layout-content" width="1200px">
 <div class="publication_container" onclick="toggleDetails(&#39;1207&#39;);">
 
     <div class="publication_image"><img src="./vog_files/Publication/TPAMI26_1.png" width="100" height="100"></div>
